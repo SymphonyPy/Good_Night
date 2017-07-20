@@ -1,5 +1,6 @@
 import itchat
 import datetime
+import time
 import os
 
 itchat.auto_login(hotReload=True)
@@ -15,3 +16,4 @@ while True:
             today = True
     if not datetime.datetime.now().hour and today:
         today = False
+    time.sleep(300)
